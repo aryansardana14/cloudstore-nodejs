@@ -1,0 +1,195 @@
+body{
+    background-image: url("/images/HD-wallpaper-new-gradient.jpg");
+    background-size: cover;
+    
+}
+.main_widget{
+    
+    margin-top: 20px;
+    padding: 10px;
+    height: fit-content;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    
+    
+}
+
+label,h3{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+input{
+    display: block;
+    padding: 15px;
+    margin: 5px;
+    height: 25px;
+    width: 200px;
+    border: 0px;
+    
+}
+.body_container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.widget_title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+
+}   
+button{
+    display: block;
+    padding: 15px;
+    margin: 5px;
+    height: 25px;
+    width: 200px;
+    border: 0px;
+}
+.action_button{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: rgb(12, 206, 99);
+    color: white;
+}
+.action_button:hover{
+    
+    height: 35px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: rgb(33, 132, 78);
+}
+#google_logo{
+    height: 15px;
+}
+.google_action{
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+}
+.google_action:hover{
+    background-color: rgb(199, 198, 198);
+    border: 1px solid grey;
+    color: black;
+}
+.file_widget{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    
+}
+.file_thumbnail{
+    height: 90px;
+}
+
+p{  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+   
+}
+h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img_container{
+    display: flex;
+    justify-self: center;
+    height: max-content;
+    width: 50px;
+}
+.download_button{
+    
+    height: 50px;
+    float: right;
+}
+
+/* Share modal styles */
+.share_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal_content h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal_content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.modal_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal_buttons button {
+    width: 40%;
+}
+.delete_button {
+    background-color: #ff4d4d;
+    border: 1px solid #ff1a1a;
+    color: white;
+   
+    
+}
+
+.delete_button:hover {
+    background-color: #ff1a1a;
+    width: 80px;
+}
+.file_methods{
+    display: flex;
+}
+.share_button,.delete_button{
+    width: 80px;
+    
+
+}
+.share_button:hover{
+    width: 80px;
+}

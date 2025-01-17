@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <div class="body_container">
+        <div class="main_widget">
+            <h3 class="widget_title">Upload a File</h3>
+            <form action="/api/files/upload" method="post" enctype="multipart/form-data">
+                <label for="file_input">Select File</label>
+                <input type="file" name="file" id="file_input" required>
+
+                <button type="submit" class="action_button">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

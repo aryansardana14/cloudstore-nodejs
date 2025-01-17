@@ -1,0 +1,173 @@
+/* Body and container styling */
+body {
+    background-image: url("/images/HD-wallpaper-new-gradient.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Main widget styling */
+.main_widget {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.widget_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(33, 132, 78);
+}
+
+/* Form input and button styling */
+input,
+button {
+    width: 90%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: rgb(12, 206, 99);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(33, 132, 78);
+}
+
+/* File widget responsive styling */
+.file_widget {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.file_thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.file_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.file_details h5 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.file_details p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.download_button {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Action button styling */
+.action_button {
+    height: 40px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: rgb(12, 206, 99);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+.action_button:hover {
+    background-color: rgb(33, 132, 78);
+}
+
+/* Google action button */
+.google_action {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.google_action:hover {
+    background-color: rgb(199, 198, 198);
+    border: 1px solid grey;
+}
+
+#google_logo {
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+    .main_widget {
+        padding: 15px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .file_widget {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .file_details {
+        align-items: center;
+    }
+}

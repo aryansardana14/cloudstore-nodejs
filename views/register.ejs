@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+
+<body>
+    <div class="body_container">
+        <div class="main_widget">
+            <h3 class="widget_title">Register for My Files</h3>
+            <form action="/auth/register" method="post">
+                <label for="username">Email</label>
+                <input type="email" name="username" id="user_email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="user_password" placeholder="Enter your password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <div>
+                <a href="/auth/google" class="google_action">
+                    <img id="google_logo" src="/images/google-g-2015-logo.png" ">
+                    Sign up with Google
+                </a>
+            </div>
+            <p>Already have an account? <a href="/auth/login">Login here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
