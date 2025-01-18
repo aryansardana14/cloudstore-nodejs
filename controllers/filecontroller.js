@@ -1,15 +1,16 @@
 const { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand,CopyObjectCommand } = require('@aws-sdk/client-s3');
 const { insertFile, getFilesByUser, getFileById, renameFile, deleteFile } = require('../models/File');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+
 const multer = require('multer');
 const path = require('path');
 require('dotenv').config();
 // Configure AWS S3
-const s3 = new S3Client({ region: process.env.AWS_REGION ,credentials:{
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+const s3 = new S3Client({ region: process.env.APP_AWS_REGION ,credentials:{
+    accessKeyId: process.env.APP_AWS_ACCESS_KEY,
+    secretAccessKey: process.env.APP_AWS_SECRET_ACCESS_KEY
 }});
-const bucketName = process.env.AWS_S3_BUCKET;
+const bucketName = process.env.APP_AWS_S3_BUCKET;
 
 // Configure multer for file upload
 const upload = multer({

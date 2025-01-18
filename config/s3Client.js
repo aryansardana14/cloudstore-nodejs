@@ -4,10 +4,10 @@ const dotenv = require('dotenv');
 // Load environment variables
 dotenv.config();
 const s3=new S3Client({
-    region:process.env.AWS_REGION,
+    region:process.env.APP_AWS_REGION,
     credentials:{
-        accessKeyId: process.env.AWS_ACCESS_KEY,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+        accessKeyId: process.env.APP_AWS_ACCESS_KEY,
+        secretAccessKey: process.env.APP_AWS_SECRET_ACCESS_KEY
     }
 })
 
