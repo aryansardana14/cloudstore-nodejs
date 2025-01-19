@@ -15,14 +15,10 @@ const app = express();
 app.use(
     session({
         secret: 'FILEAUTH',
-
-        resave: false, // Forces the session to be saved back to the session store
-        saveUninitialized: false, // Forces a session that is "uninitialized" to be saved to the store
-        cookie: {
-            maxAge: 3600000, // Sets the cookie expiration time in milliseconds (1 hour here)
-            httpOnly: true, // Reduces client-side script control over the cookie
-            secure: true, // Ensures cookies are only sent over HTTPS
-        }}));
+        resave: false,
+        saveUninitialized: true,
+    })
+);
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -38,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/files', fileRoutes);
 app.use('/api/files', fileShareRoutes);
 app.use('/auth', authRoutes);
-app.get("/", (req, res) => {
+app.get("/",(req,res)=>{
     res.redirect('/api/files')
 })
 // Catch-all route for undefined endpoints
