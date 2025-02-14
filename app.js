@@ -42,7 +42,11 @@ app.use((req, res) => {
     console.log(`Undefined route accessed: ${req.originalUrl}`);
     res.redirect('/api/files'); // Redirect to /api/files
 });
+/*
 const PORT = process.env.APP_PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+*/
+
+export default app; 
